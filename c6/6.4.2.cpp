@@ -24,20 +24,14 @@ Node walk(Node u, int ti) {
     return v;
 };
 void solve(Node& uu, Node& vv) {
-    //cout << "solve:" << endl;
     q.push(uu);
-    //cout << "uu:" << uu << " vv:" << vv << endl;
     while (!q.empty()) {
         auto u = q.front();
         q.pop();
-        //cout << "pop item:" << u << endl;
         for (int ti = 0; ti < 3; ++ti) {
             if (can[u.r][u.c][u.d][ti] == false) continue;
-            //cout << "can" << endl;
             auto v = walk(u, ti);
-            //cout << "ti:" << ti << " v:" << v << endl;
             if (dist[v.r][v.c][v.d] <= dist[u.r][u.c][u.d] + 1) continue;
-            //cout << "dist yes" << endl;
             dist[v.r][v.c][v.d] = dist[u.r][u.c][u.d] + 1;
             p[v.r][v.c][v.d] = u;
             if (v.r == vv.r && v.c == vv.c) {
@@ -103,15 +97,12 @@ int main() {
             }
             sline >> c;
             string limit;
-            //cout << "r:" << r << " c:" << c << endl;
             while (sline >> limit) {
                 if (limit == "*") {
                     break;
                 }
                 int dir = ds[limit[0]];
-                //cout << " d:" << limit[0] << " dir:" << dir << endl;
                 for (int i = 1; i < limit.size(); ++i) {
-                    //cout << "ts:" << ts[limit[i]] << endl;
                     can[r][c][dir][ts[limit[i]]] = true;
                 }
             }
