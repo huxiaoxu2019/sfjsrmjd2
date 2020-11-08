@@ -1,5 +1,5 @@
 // 欧拉回路 AC
-// UVa 10129
+// UVa 10129 https://onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&category=0&problem=1070
 // GitHub https://github.com/aoapc-book/aoapc-bac2nd/blob/master/ch6/UVa10129.cpp
 #include<bits/stdc++.h>
 using namespace std;
