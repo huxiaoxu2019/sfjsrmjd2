@@ -1,5 +1,7 @@
-// https://github.com/aoapc-book/aoapc-bac2nd/blob/master/ch6/UVa572.cpp
-// http://acm.hdu.edu.cn/showproblem.php?pid=1241
+// DFS 连通块
+// UVa 572
+// GitHub https://github.com/aoapc-book/aoapc-bac2nd/blob/master/ch6/UVa572.cpp
+// HDU http://acm.hdu.edu.cn/showproblem.php?pid=1241
 #include<bits/stdc++.h>
 using namespace std;
 const int N = 105;
