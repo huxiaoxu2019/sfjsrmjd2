@@ -11,6 +11,12 @@ void solve() {
     minv=LONG_MAX;
     for(int r=1;r<=m;++r) {
         d[r][n]=grid[r][n];
+        if (n==1) {
+            if(minv>d[r][n]) {
+                minv=d[r][n];
+                first_row=r;
+            }
+        }
     }
     for(int c=n;c>=2;--c) {
         for(int r=1;r<=m;++r) {
