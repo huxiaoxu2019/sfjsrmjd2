@@ -1,3 +1,5 @@
+// https://github.com/aoapc-book/aoapc-bac2nd/blob/master/ch9/UVa11584.cpp
+// UVa 11584
 #include<bits/stdc++.h>
 using namespace std;
 const int maxn=1e3+10;
