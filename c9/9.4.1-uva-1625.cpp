@@ -1,5 +1,6 @@
 // https://www.cnblogs.com/violet-acmer/p/11010582.html
 // https://github.com/aoapc-book/aoapc-bac2nd/blob/master/ch9/UVa1625.cpp
+// https://onlinejudge.org/external/16/1625.pdf
 // UVa 1625
 // Tip: 在for里面，每次需要初始化变量 memset!!!
 //      memset 耗时，TLE
