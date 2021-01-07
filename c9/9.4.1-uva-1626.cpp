@@ -18,12 +18,7 @@ bool match(char a, char b) {
 
 void solve() {
     memset(f,-1,sizeof f);
-
-    for(int i = 0; i < n; i++) {
-        f[i+1][i] = 0;
-        f[i][i] = 1;
-    }
-    for (int i=n-2;i>=0;--i) {
+    for (int i=n-1;i>=0;--i) {
         for (int j=i;j<=n-1;++j) {
             if (i==j) {
                 f[i][j] = 1;
@@ -44,6 +39,9 @@ void solve() {
 }
 
 void print(int i, int j) {
+    for(int i = 0; i < n; i++) {
+        f[i+1][i] = 0;
+    }
     if (i>j) return;
     if (i==j) {
         if (S[i]=='(' || S[i] == ')') printf("()");
