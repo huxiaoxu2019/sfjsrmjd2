@@ -1,3 +1,5 @@
+// https://onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&category=0&problem=4501&mosmsg=Submission+received+with+ID+25928455
+// https://github.com/aoapc-book/aoapc-bac2nd/blob/master/ch9/UVa1626.cpp
 // UVa 1626
 #include<bits/stdc++.h>
 using namespace std;
